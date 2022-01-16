@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Natiive - Quiz</title>
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+    
+        <!-- javascript -->
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="javascripts/index.js"></script>
+    
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- menu start -->
+        <div class="menu-container">
+            <div class="menu-holder">
+                <div id="menu-left" class="menu-category">
+                    <div class="logo-holder" id="logo-holder">
+                        <a href="./index.html">
+                            <img id="logo" src="Img/natiive-logo.png"/>
+                        </a>
+                    </div>
+                    <div class="logo-holder">
+                        <a href="./index.html">
+                            <p id="logo-text">natiive</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- menu for web -->
+                <div id="navigation" class="menu-category">
+                    <a class="nav-link" href="index.html">Territories</a>
+                    <a class="nav-link" href="Quiz.html">Quiz</a>
+                </div>
+                <img src="Img/menu.svg" id="menuIcon" />
+            </div>
+        </div>
+        <!-- menu panel for mobile -->
+        <div id="panelCont">
+            <div id="panel">
+                <img src="Img/close.svg" id="close"/>
+                <div id="menuLinks">
+                    <a href="index.html" class="panelLink">Territories</a>
+                    <a href="Quiz.html" class="panelLink">Quiz</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Menu Ends -->
+
+<!-- Quiz start -->
+        <div id="quiz-container">
+            <div class="arrow-holder">
+                <a href="Quiz.html" class="left-arrow arrow">                    
+                    <img src="Img/arrow_left.svg" alt="left arrow" class="arrow-img">
+                </a>
+            </div>
+
+            <div class="quiz-inner-container">
+                <div class="quiz-holder">
+                    <div class="quiz-heading">
+                        <p class="quiz-heading-text">
+                            Quiz 2
+                        </p>
+                    </div>
+                    <div class="quiz-question-holder long-text">
+                        <p class="quiz-question-text">
+                           Indigenous people had a written language.
+                        </p>
+                    </div>
+                    <div id="answer-1">
+                        <div class="answer-holder">
+                            <p class="true-false hide">True</p>
+                            <p class="answer-text-1-class hide" id="answer-text">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quiz-answer">
+                        <button id="false" class="false answer-bttn">False</button>
+                        <button id="true" class="true answer-bttn answer-two">True</button>
+                    </div>
+                    <div class="quiz-button">
+                        <button class="button-quiz"></button>
+                        <button class="button-quiz select"></button>
+                        <button class="button-quiz"></button>
+                        <button class="button-quiz"></button>
+                        <button class="button-quiz"></button>
+                    </div>
+                </div>
+            </div> 
+                            
+            <div class="arrow-holder">
+                <a href="Quiz3.html" class="right-arrow arrow"> 
+                    <img src="Img/arrow_right.svg" alt="right arrow" class="arrow-img">
+                </a>
+            </div>
+        </div>
+<!-- Quiz end -->
+
+    </body>
+
+</html>

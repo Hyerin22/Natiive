@@ -1,0 +1,288 @@
+/* ------------------------Style------------------------------ */
+/* body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  background-image: url(../Img/image-1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Raleway", sans-serif;
+} */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px;
+  max-width: 1210px;
+}
+.mapimg {
+  width: 100%;
+  max-width: 939px;
+  max-height: 573.94px;
+}
+.first-head {
+  max-width: 1000px;
+}
+.first-head > p{
+  background-color: #fdde03;
+  font-weight: bold;
+  font-size: 37px;
+  padding: 15px 40px 15px 15px;
+  display: inline-block;
+  margin-bottom: 40px;
+  max-width: 800px;
+  align-items: center;
+}
+
+.mapcont {
+  display: flex;
+  flex-direction: row;
+}
+
+.territories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* width: 228px; */
+  max-height: 300px;
+  margin-left: 50px;
+  margin-top: 10px;
+  padding-left: 30px;
+  padding-right: 20px;
+  border-left: #fdde03 solid 4px;
+}
+
+.territories > a {
+  color: white;
+  text-decoration: none;
+  font-size: 27px;
+  margin: 10px 0;
+}
+
+/*========== MUSQUEAM PAGE============ */
+
+.terri {
+  font-weight: bold;
+}
+
+a.highlight {
+  color: #fdde03;
+}
+
+.infocont {
+  max-width: 1200px;
+  margin: 50px 60px 50px 30px;
+}
+.infocont2 {
+  max-width: 1250px;
+  margin-top: 50px;
+  margin-right: 60px;
+}
+
+.pronoun {
+  font-size: 24px;
+  color: #fdde03;
+}
+
+.title {
+  color: white;
+  font-size: 50px;
+}
+
+.lists {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.cities {
+  margin-right: 60px;
+  margin-bottom: 10px;
+}
+.para > p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+/* =======RESPONSIVE LAYOUT======= */
+@media only screen and (max-width:475px){
+  body{
+    margin: 0;
+    /* justify-content: center; */
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  .infocont {
+    width: 100%;
+    /* max-width: 1250px; */
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .first-head > p {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .mapcont {
+    flex-direction: column;
+  }
+  .territories {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+  }
+  .territories > a {
+    font-size: 16px;
+  }
+  .para{
+    margin-right: 10%;
+  }
+  .mapimg {
+    width: 100%;
+    max-width: 939px;
+    max-height: 573.94px;
+  }
+
+  /* == territory info==================== */
+  .title {
+    color: white;
+    font-size: 24px;
+  }
+  .pronoun {
+    font-size: 16px;
+    color: #fdde03;
+  }
+  .lists {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .cities {
+    margin-right: 60px;
+    margin-bottom: 10px;
+  }
+  .para > p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 100px;
+  }
+  /* == territory info end=============== */
+
+}
+@media only screen and (min-width:476px) and (max-width: 1024px) {
+  body{
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  .first-head > p {
+    /* max-width: 500px; */
+    margin-bottom: 20px;
+    font-size: 27px;
+    /* padding: 15px; */
+  }
+  .mapcont {
+    flex-direction: column;
+  }
+  .infocont {
+    width: 100%;
+    /* max-width: 1250px; */
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .infocont2 {
+    max-width: 1250px;
+
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    
+  }
+  .mapimg {
+    width: 100%;
+  }
+  .territories {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .territories > a {
+    font-size: 20px;
+  }
+  .para{
+    margin-right: 10%;
+  }
+  /* == territory info==================== */
+  .title {
+    color: white;
+    font-size: 24px;
+  }
+  .pronoun {
+    font-size: 16px;
+    color: #fdde03;
+  }
+  .lists {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .cities {
+    margin-right: 60px;
+    margin-bottom: 10px;
+  }
+  .para > p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 100px;
+  }
+  /* == territory info end=============== */
+}
+@media only screen and (min-width:1025px){
+  body{
+    margin: 0;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px;
+  }
+  .first-head > p {
+    font-size: 38px;
+  }
+  .mapcont {
+    flex-direction: row;
+    width: 100%;
+  }
+  .mapimg {
+    width: 75%;
+    max-width: 939px;
+    max-height: 573.94px;
+  }
+  .territories > a {
+    font-size: 26px;
+  }
+}
+
+/* ------------------------Style end------------------------------ */

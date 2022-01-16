@@ -1,0 +1,561 @@
+/* ------------------------Menu------------------------------ */
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  background-image: url(../Img/image-1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+.menu-container {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-holder {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+}
+
+#logo{
+  max-width: 70px;
+  max-height: 70px;
+}
+
+
+
+.logo-holder
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+
+#menu-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+
+
+/* ===== media queries ============================== */
+@media only screen and (max-width: 549px) {
+  .menu-category {
+    flex: 1;
+  }
+  #navigation {
+    display: none;
+  }
+  #logo {
+    width: 50px;
+    height: 50px;
+  }
+  #logo-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #fdde03;
+    font-size: 30px;
+  }
+
+  #menuIcon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    width: 40px;
+  }
+  #panelCont {
+    display: none;
+    width: 100%;
+  }
+  #panel {
+    box-sizing: border-box;
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+    width: 300px;
+    height: 100vh;
+    padding: 30px 30px 30px 55px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #menuLinks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .panelLink {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 992px) {
+  /* ===== menu panel =============================== */
+  .menu-category {
+    flex: 1;
+  }
+  #navigation {
+    display: none;
+  }
+
+  #logo {
+    width: 70px;
+    height: 70px;
+  }
+  #logo-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #fdde03;
+    font-size: 40px;
+  }
+
+  #menuIcon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    width: 40px;
+  }
+
+  #panelCont {
+    display: none;
+    width: 100%;
+  }
+  #panel {
+    box-sizing: border-box;
+    display: none;
+    background-color:black;
+    opacity: 80%;
+    width: 500px;
+    height: 100vh;
+    padding: 30px 30px 30px 55px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #menuLinks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .panelLink {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  /* ===== end menu panel =============================== */
+}
+
+@media only screen and (min-width: 993px) {
+  /* ===== menu panel =============================== */
+  .menu-category {
+    flex: 1;
+  }
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    padding-right: 80px;
+  }
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+
+
+  #logo-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #fdde03;
+    font-size: 40px;
+  }
+  #menuIcon,
+  #panelCont,
+  #close,
+  .panelLink,
+  #menuLinks {
+    display: none;
+  }
+  /* ===== end menu panel =============================== */
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+}
+
+#menu-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #fdde03;
+}
+
+.nav-link:active {
+  text-decoration: underline;
+}
+
+/* --------------------------Menu End------------------------------ */
+
+/* ------------------------------Quiz Start----------------------------------- */
+#quiz-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+/* ARROW */
+.arrow-holder {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3%;
+}
+
+.arrow {
+  max-width: 80%;
+  height: auto;
+}
+
+.arrow > img {
+  max-width: 60px;
+  height: auto;
+}
+
+.arrow:hover .arrow-img {
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+/* QUIZ */
+.quiz-inner-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.quiz-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.quiz-heading-text {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.quiz-question-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdde03;
+  margin-bottom: 1.5em;
+  min-width: 50%;
+  max-width: 70%;
+  padding: 10px 0;
+}
+
+.anQuiz-holder {
+  min-width: 30%;
+  max-width: 50%;
+}
+
+.quiz-question-text {
+  font-weight: 700;
+  font-size: 60px;
+  padding: 0 0.25em;
+  margin: 0;
+}
+
+/* .quiz-number {
+
+} */
+
+/* BUTTON */
+.answer-bttn {
+  width: 15%;
+  max-width: 15%;
+  height: 60px;
+  background-color: transparent;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 8px;
+  color: white;
+}
+
+/* ANSWER */
+#answer-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.answer-holder {
+  width: 50%;
+  margin-bottom: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.answer-text-1-class {
+  color: white;
+  line-height: 1.75em;
+}
+
+.true-false {
+  background-color: #fdde03;
+  padding: 5px;
+  font-size: 24px;
+  color: #000;
+  font-weight: 700;
+  width: 80px;
+  text-align: center;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 5px;
+}
+
+/* BUTTON */
+.quiz-answer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.quiz-button {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.button-quiz {
+  width: 10px;
+  height: 17px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #666666;
+}
+
+button.select {
+  background-color: #999;
+}
+
+/* HIDE */
+.hide {
+  display: none;
+}
+/* -------------------------------Quiz End---------------------------------- */
+
+/* ================= RESPONSIVE LAYOUT ================= */
+
+/* ---------------max-width:428px--------------- */
+@media only screen and (max-width: 428px) {
+  body {
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+  }
+
+  /* ================= QUIZ PART ================= */
+  .quiz-heading-text {
+    font-size: 32px;
+  }
+
+  .quiz-question-text {
+    font-size: 24px;
+  }
+
+  .quiz-question-holder {
+    min-width: 90%;
+    max-width: 90%;
+  }
+
+  .answer-txt {
+    font-size: 12px;
+  }
+
+  .answer-holder {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+
+  .quiz-answer {
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .answer-text-1-class {
+    font-size: 12px;
+  }
+
+  .true-false {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .answer-bttn {
+    width: 40%;
+    max-width: 40%;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  .button-quiz {
+    width: 5px;
+    height: 15px;
+  }
+
+  /* ============ ARROW ============ */
+  .arrow > img {
+    max-width: 40px;
+    height: auto;
+  }
+}
+
+/* ---------------max-width:992px--------------- */
+@media only screen and (min-width: 429px) and (max-width: 992px) {
+  .quiz-heading-text {
+    font-size: 40px;
+  }
+
+  .quiz-question-text {
+    font-size: 30px;
+    max-width: 90%;
+  }
+
+  .answer-txt {
+    font-size: 16px;
+  }
+
+  .answer-holder {
+    width: 60%;
+  }
+
+  .quiz-answer {
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .answer-text-1-class {
+    font-size: 14px;
+  }
+
+  .true-false {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .answer-bttn {
+    width: 40%;
+    max-width: 40%;
+    height: 50px;
+  }
+
+  .button-quiz {
+    width: 5px;
+    height: 15px;
+  }
+
+  /* ============ ARROW ============ */
+  .arrow > img {
+    max-width: 50px;
+  }
+}
+
+/* ---------------min-width:993px--------------- */
+
+@media only screen and (min-width: 993px) {
+  .quiz-question-text {
+    font-size: 40px;
+    max-width: 90%;
+  }
+
+  .answer-holder {
+    width: 50%;
+  }
+
+  .true-false {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+
+  .answer-bttn {
+    width: 25%;
+    max-width: 30%;
+    font-size: 16px;
+    gap: 20px;
+  }
+
+  .arrow > img {
+    max-width: 60px;
+  }
+
+  .container {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+  }
+}
+
+/* -------------------------------Quiz 5 End---------------------------------- */
+
+
